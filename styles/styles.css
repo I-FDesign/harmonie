@@ -1,0 +1,791 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	background: white;
+	z-index: 999;
+}
+header{
+	background: white;
+}
+header .menu-mobile,
+header .nav{
+	display:none;
+}
+header img{
+	max-width: 100%;
+	min-width: 100%;
+	max-height: 700px;
+	vertical-align: top;
+}
+.content{
+	width: 90%;
+	margin:0 auto;
+}
+header .menu{
+	border-bottom:1px solid rgba(0,0,0,.3);
+}
+header .menu-fixed,
+header .menu-mob-fixed{
+	background: white;
+	width: 100%;
+	position:fixed;
+	top:0;
+	box-shadow: 0px 0px 5px black;
+	z-index:999;
+}
+header .menu-mob-fixed{
+	padding-top: 10px;
+}
+header .menu .content{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+header .menu .logo{
+	height: 80px;
+	width: 20%;
+	margin-left: -20px;
+}
+header .menu .logo img{
+	width: 100%;
+	max-height: 100%;
+}
+header .menu a{
+	text-decoration: none;
+	color: rgba(0,0,0,.6);
+	padding: 30px 5px;
+	font-weight: 300;
+	font-family: 'Raleway', 'Open Sans', sans-serif;
+	display: inline-block;
+}
+header .menu a:hover{
+	padding-bottom: 26px;
+	border-bottom: 4px solid rgba(0,0,0,.3);
+}
+.main{
+	background: white;
+	padding-top:80px;
+}
+.main .info{
+	text-align: center;
+	border-bottom: 6px solid rgb(245, 131, 10);
+	margin-bottom: 50px;
+}
+.main .info h1,
+.main h2{
+	font-size: 32px;
+	font-weight: 400;
+	text-align: center;
+}
+.main  p span{
+	font-size: 24px;
+	font-weight: bold;
+}
+.main .info p{
+	width: 90%;
+	margin:0 auto;
+	margin-top: 40px;
+	color:rgb(245, 131, 10);
+}
+.main .imgs{
+	width: 70%;
+	margin:0 auto;
+	margin-top: 50px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.main .imgs .img{
+	display: inline-block;
+	width: 30%;
+	margin-bottom: 15px;
+	padding:5px;
+	border:1px solid rgba(0,0,0,.4);
+}
+.main .imgs .img img{
+	vertical-align: top;
+	width: 100%;
+	cursor:pointer;
+}
+.main .our-services{
+	margin-top: 40px;
+	margin-bottom: 100px;
+}
+.main .our-services ul{
+	margin:0 auto;
+	margin-top: 30px;
+	width: 50%;
+	color:rgb(95, 111, 129);
+	margin-bottom: 30px;
+	text-align: left;
+}
+.main .our-services ul i{
+	padding:5px 7px;
+	font-size: 22px;
+	background: #2073DA;
+	color:white;
+	border-radius:2px;
+	margin-left: 5px;
+	opacity: .8;
+}
+.main .habitaciones{
+	border-bottom: 6px solid rgb(245, 131, 10);
+}
+.main .habitaciones h2{
+	margin-bottom: 30px;
+}
+.main .habitaciones article p{
+	text-align: center;
+	margin-top: 10px;
+	color:rgb(95, 111, 129);
+	font-size: 18px;
+	width: 90%;
+	margin: 0 auto;
+}
+.main .habitaciones article p.second{
+	margin-top: 20px;
+}
+.main .habitaciones .hab-options{
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.main .habitaciones .hab-options .hab{
+	width: 45%;
+	margin: 0 auto;
+	cursor:pointer;
+	margin-bottom: 60px;
+	opacity: .8;
+	transition: .5s all ease;
+}
+.main .habitaciones .hab-options .hab:hover{
+	opacity: 1;
+}
+.main .habitaciones .hab-options .last{
+	align-self: baseline;
+}
+.hab .img img{
+	width: 100%;
+	vertical-align: top;
+	border-radius: 1px;
+	height: 320px;
+}
+.hab .under{
+	padding:0 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: -30px;
+}
+.hab .under p{
+	color:rgb(253, 48, 78);
+	font-family: 'Open Sans';
+	background: white;
+	padding:10px;
+	font-weight: 600;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+.hab .under .arrow{
+	border:4px solid white;
+	cursor:pointer;
+}
+.hab .under .arrow i{
+	font-size: 50px;
+	color:white;
+	background: rgb(253, 48, 78);
+	font-weight: lighter;
+	padding:5px 25px;
+}
+.hab .under .arrow i:hover{
+	color: #FCA0AE;
+	transition: .3s all ease;
+}
+.hab .title h2{
+	text-align: left;
+	padding-left: 20px;
+	font-family: 'Merriweather', serif;
+	margin-top: -10px;
+	font-size: 28px;
+}
+.hab .hab-info{
+	margin-top: 20px;
+}
+.hab .hab-info div{
+	border-top:1px solid rgba(0,0,0,.13);
+	display:flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding:10px 30px;
+}
+.hab .hab-info div i{
+	font-size: 23px;
+	color:rgba(128,128,128,.45);
+	width: 10%;
+}
+.hab .hab-info div p{
+	font-family: 'Open Sans';
+	color:rgba(0,0,0,.7);
+	letter-spacing: 1px;
+}
+.hab:hover>.title h2{
+	transition: .4s all ease;
+	color:red;
+}
+.main .sustentabilidad{
+	margin-top: 40px;
+	border-bottom: 6px solid rgb(245, 131, 10);
+	padding-bottom: 40px;
+}
+.main .sustentabilidad h2{
+	margin-bottom: 40px;
+}
+.main .sustentabilidad p{
+	text-align: center;
+	margin-top: 10px;
+	color:rgb(95, 111, 129);
+	font-size: 17px;
+}
+.main .sustentabilidad a{
+	display:block;
+	width: 40%;
+	color:white;
+	padding:15px 0;
+	font-size: 18px;
+	border-radius: 2px;
+	background: #3F84ED;
+	text-align: center;
+	text-decoration: none;
+	margin:0 auto;
+	margin-top: 20px;
+}
+.main .sustentabilidad a:hover{
+	background: #5691EC;
+}
+.main .sustentabilidad h3{
+	font-weight: normal;
+	text-align: center;
+	margin:30px 0;
+	font-size: 25px;
+	color:rgba(0,0,0,.7);
+	margin-bottom: 20px;
+}
+.main .sustentabilidad .articulos{
+	padding:20px;
+}
+.articulo{
+	border-radius: 3px;
+	box-shadow: 0 0 5px black;
+	padding:15px;
+}
+.articulo h4{
+	text-align: center;
+	font-size: 22px;
+	font-weight: normal;
+}
+.articulo .img{
+	width: 50%;
+	margin:0 auto;
+	margin-top: 20px;
+	border-radius: 3px;
+}
+.articulo .img img{
+	width: 100%;
+}
+.main .contacto{
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+.main .contacto .form{
+	margin:0 auto;
+	margin-top: 40px;
+	width: 70%;
+}
+.contacto form{
+	width: 100%;
+	margin-bottom: 30px;
+	display:flex;
+	flex-direction: column;
+}
+.contacto form label,
+.contacto form input[type='text'],
+.contacto form textarea{
+	display:block;
+	max-width: 100%;
+	width: 90%;
+	margin:0 auto;
+}
+.contacto form label{
+	text-align: center;
+	margin-bottom: 3px;
+	margin-top: 10px;
+	font-weight: 400;
+	font-size: 16px;
+	color:rgb(95, 111, 129);
+	font-family: tahoma, sans-serif;
+}
+.contacto form input[type='text'],
+.contacto form textarea{
+	border:none;
+	padding:20px;
+	border: 1px solid rgba(0,0,0,.3);
+	border-radius: 3px;
+}
+.contacto form textarea{
+	min-height: 150px;
+	max-height: 300px;
+	min-width: 90%;
+	max-width: 90%;
+}
+.contacto form input[type='text']:focus,
+.contacto form textarea:focus{
+	padding: 19px;
+	border: 2px solid orange;
+}
+.contacto form input[type='submit']{
+	display:block;
+	width: 50%;
+	margin:0 auto;
+	margin-top: 20px;
+	padding:13px;
+	border:none;
+	background: orange;
+	color:white;
+	font-size: 18px;
+	font-weight: 300;
+	cursor:pointer;
+	border-radius: 4px;
+	border: 2px solid orange;
+	transition: .2s all ease;
+	text-align: center;
+}
+.contacto form input[type='submit']:hover{
+	padding:13px;
+	border: 2px solid orange;
+	background: white;
+	color:orange;
+}
+.contacto .form p.if{
+	margin-top: 10px;
+	text-align: center;
+	color:rgb(95, 111, 129);
+}
+.error{
+	color:#E14930;
+	margin-top: 10px;
+	text-align: center;
+}
+.env{
+	margin-top: 10px;
+	text-align: center;
+	color:#36B62C;
+}
+
+.main .location{
+	margin-top: 40px;
+}
+.main .location h2{
+	margin-bottom: 20px;
+}
+.main .location h2 span{
+	padding-bottom: 2px;
+	border-bottom: 6px solid rgb(245, 131, 10);
+}
+.main .location p{
+	color:rgb(95, 111, 129);
+	text-align: center;
+	width: 75%;
+	margin:0 auto;
+}
+.main .location p.ub-info{
+	font-family: 'Raleway', 'Open Sans', sans-serif;
+	margin: 40px auto;
+	font-size: 19px;
+}
+.main .location p.ub-1{
+	margin-bottom: 20px;
+}
+.main .location .map{
+	margin-top: 40px;
+}
+.main .location .map,
+.main .location .map iframe{
+	width: 100%;
+	padding-bottom:50px;
+}
+footer{
+	max-width: 100%;
+	position: relative;
+}
+footer img{
+	min-width: 100%;
+	max-width: 100%;
+	vertical-align: top;
+	position:fixed;
+	bottom:0;
+	z-index: -10;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-color: rgb(204,204,204);
+}
+footer .footer-if{
+	text-align: center;
+	z-index: -2;
+	height: 500px;
+}
+footer .footer-if h2{
+	padding-top: 60px;
+	font-size: 32px;
+	color:rgba(0,0,0,.7);
+	font-weight: 400;
+}
+footer .footer-if h2 span{
+	border-bottom: 6px solid rgba(0,0,0,.7);
+	padding-bottom: 2px;
+}
+footer .footer-if p{
+	color:rgba(0,0,0,.7);
+	font-family: 'Raleway' , 'Open Sans', sans-serif;
+	font-size: 19px;
+}
+footer .footer-if p.hotel-if{
+	padding-top:40px;
+	font-size: 22px;
+}
+footer .footer-if .icons{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin:0 auto;
+	padding-top: 70px;
+}
+footer .footer-if .icons div{
+	width: 30%;
+}
+footer .footer-if .icons i{
+	padding:15px 17px;
+	border-radius: 50%;
+	color:rgba(0,0,0,.7);
+	border:2px solid rgba(0,0,0,.7);
+	font-size: 20px;
+	display:inline-block;
+}
+footer .footer-if .icons .ubicacion i{
+	padding: 15px 20px;
+}
+footer .footer-if .icons p{
+	padding-top: 20px;
+}
+footer .footer-if .icons p.sites{
+	padding-top: 10px;
+}
+footer .footer-if .des-by{
+	padding-top: 40px;
+}
+footer .footer-if .des-by p{
+	font-size: 14px;
+}
+footer .footer-if .des-by p span{
+	color:#2F88DA;
+}
+.fixed{
+	position:fixed;
+	bottom:40px;
+	left:0;
+	width: 100%;
+	display:flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	padding: 0 5%;
+}
+.fixed .call{
+	display:none;
+}
+.fixed .calendar i{
+	font-size: 85px;
+	color: rgba(0,0,0,.8);
+	cursor: pointer;
+}
+
+
+/*-------------------------------------------------------*/
+/*---------------------Media Queries---------------------*/
+/*-------------------------------------------------------*/
+@media screen and (max-width: 1000px) {
+	header .menu .content{
+		width: 100%;
+	}
+	header .menu{
+		max-width: 100%;
+	}
+	header .menu-mobile .logo{
+		margin-left: 0;
+	}
+	.hab .img img{
+		height: 250px;
+	}
+	.hab .title{
+		margin-top: 15px;
+	}
+	.hab .hab-info div p{
+		padding-left: 10px;
+	}
+	.last .title h2{
+		font-size: 25px;
+	}
+}
+
+@media screen and (max-width: 800px){
+	header .menu a{
+		font-size: 14px;
+	}
+	.main .info p{
+		width: 50%;
+	}
+	.main .imgs .img{
+		width: 40%;
+	}
+	.hab .img img{
+		height: 220px;
+	}
+	footer .footer-if .icons{
+		flex-direction: column;
+	}
+	footer .footer-if .icons div{
+		width: 100%;
+		padding-bottom: 20px;
+	}
+	footer .footer-if .des-by{
+		padding:20px 0;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.content{
+		width: 100%;
+	}
+	header .menu{
+		display:none;
+	}
+	header .menu-mobile{
+		display:block;
+	}
+	header .menu-mobile .content{
+		width: 90%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	header .menu-mobile .logo img{
+		height: 50px;
+		margin-left: -10px;
+	}
+	header .menu-mobile .menu-btn{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 16%;
+		color:white;
+		background: rgb(34, 34, 34);
+		border-radius: 3px;
+		padding: 7px 10px;
+		cursor:pointer;
+	}
+	header .menu-mobile{
+		padding-bottom:10px;
+		border-bottom:1px solid rgba(0,0,0,.3);
+	}
+	header .menu-mobile .menu-btn:hover{
+		transition: .3s all ease;
+		background: #CE3000;
+	}
+	header .menu-mobile .menu-btn p{
+		margin-right:10px;
+	}
+	header .menu-mobile .menu-btn i{
+		margin-right: 2%;
+	}
+	header .nav{
+		width: 95%;
+		margin:0 auto;
+		display:none;
+		justify-content: flex-end;
+	}
+	header .nav nav{
+		background: rgb(34, 34, 34);
+		color:white;
+		width: 60%;
+		padding:10px;
+		padding-bottom: 0;
+	}
+	header .nav nav a{
+		color:white;
+		text-decoration: none;
+		width: 100%;
+		display:inline-block;
+		padding:5px;
+		margin-bottom: 10px;
+		font-family: 'Raleway', sans-serif;
+		font-size: 15px;
+	}
+	.main .habitaciones .hab-options{
+		justify-content: center;
+	}
+	.main .habitaciones .hab-options .hab{
+		width: 70%;
+		opacity: 1;
+	}
+	.main .contacto .form{
+		width: 90%;
+	}
+	.main .contacto .form p.if{
+		width: 100%;
+	}
+	.main .location .map{
+		width: 90%;
+		margin:0 auto;
+		margin-top: 40px;
+	}
+	.main .location .map iframe,
+	.main .location .map{
+		padding-bottom: 20px;
+	}
+	footer .footer-if{
+		height: 100%;
+	}
+	footer img{
+		position: fixed;
+		height: 100%;
+	}
+	footer .footer-if p.hotel-if{
+		font-size: 17px;
+	}
+	footer .footer-if p{
+		font-size: 16px;
+	}
+	footer .footer-if .icons{
+		padding-top: 30px;
+	}
+	.fixed{
+		justify-content: space-between;
+		bottom:20px;
+	}
+	.fixed .call{
+		display: block;
+	}
+	.fixed .call i{
+		padding:15px 20px;
+		font-size: 40px;
+		border-radius: 50%;
+		background: #1E901E;
+		cursor:pointer;
+		color:white;
+		box-shadow: 0px 0px 15px gray;
+	}
+	.fixed .calendar i{
+		font-size: 65px;
+	}
+}
+
+@media screen and (max-width: 600px){
+	header .menu-mobile .menu-btn{
+		width: 20%;
+	}
+	.main .imgs{
+		width: 90%;
+	}
+	.main .habitaciones article p{
+		font-size: 16px;
+	}
+	.hab .under .arrow{
+		text-align: center;
+	}
+	.hab .under .arrow i{
+		padding:0px 20px;
+	}
+}
+@media screen and (max-width: 500px){
+	header .menu-mobile .menu-btn{
+		width: 26%;
+	}
+	.main .info p{
+		width: 100%;
+	}
+	.main .habitaciones .hab-options .hab{
+		width: 80%;
+	}
+	.hab .title h2{
+		font-size: 25px;
+	}
+	.main .our-services ul{
+		width: 80%;
+	}
+	.main .location .map,
+	.main .location .map iframe{
+		max-height: 300px;
+	}
+}
+@media screen and (max-width: 360px){
+	.main{
+		padding-top: 40px;
+	}
+	header .menu-mobile .menu-btn{
+		width: 32%;
+	}
+	header .menu-mobile .menu-btn p{
+		font-size: 15px;
+	}
+	header .menu-mobile .logo{
+		width: 40%;
+	}
+	header .nav nav{
+		width: 70%;
+	}
+	.main .info{
+		margin-top: 30px;
+	}
+	.main  .imgs{
+		justify-content: center;
+	}
+	.main .imgs .img{
+		width: 90%;
+	}
+	.main .habitaciones .hab-options .hab{
+		width: 90%;
+	}
+	.hab .img img{
+		height: 180px;
+	}
+	.main .contacto .form{
+		width: 100%;
+	}
+	.contacto form label,
+	.contacto form input[type='text'],
+	.contacto form textarea{
+		width: 80%;
+	}
+	.contacto form textarea{
+		max-width: 80%;
+		min-width: 80%;
+	}
+	.main .location .map{
+		width: 85%;
+		margin:0 auto;
+		margin-top: 40px;
+	}
+	.main .location .map,
+	.main .location .map iframe{
+		max-height: 250px;
+	}
+}
