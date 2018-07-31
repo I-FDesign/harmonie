@@ -1,6 +1,5 @@
 <?php session_start();
 	require 'admin/functions.php';
- 	require 'sust.php';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -61,38 +60,47 @@
 					Harmonie hotel de montaña, se ubica en el ingreso principal de Villa General Belgrano, al pie del Cerro de la Virgen con una inmejorable vista a las sierras cordobesas dentro de un entorno único y cautivador que permite disfrutar de momentos únicos.
 					</p>
 					<div class="imgs">	
-						<div class="img"><img src="img/info1.JPG" alt=""></div>
-						<div class="img"><img src="img/info2.JPG" alt=""></div>
-						<div class="img"><img src="img/info3.JPG" alt=""></div>
+						<div class="img"><img src="img/info1.jpg" alt="" id='info1'></div>
+						<div class="img"><img src="img/info2.jpg" alt=""></div>
+						<div class="img"><img src="img/info3.jpg" alt=""></div>
 						<div class="img"><img src="img/info4.jpg" alt=""></div>
 						<div class="img"><img src="img/info5.jpg" alt=""></div>
 						<div class="img"><img src="img/info6.jpg" alt=""></div>
+					</div>
+					<div class="cover"></div>
+					<div class="show-img">
+						<div>
+							<i class="fa fa-times" aria-hidden="true"></i>
+							<img src="#" id='imgshow' alt="">
+						</div>
 					</div>
 				<div class="our-services">
 					<article>
 						<h2>Nuestros Servicios</h2>
 						<ul>
-							<li>Aire acondicionado.</li>
-							<li>Habitaciones de 35 m2.</li>
-							<li>Wi Fi de excelente conexión en todo el complejo.</li>
-							<li>Televisores LCD en habitaciones.</li>
-							<li>Frigobar.</li>
-							<li>Cofre de seguridad y alarma.</li>
-							<li>Quincho y asadores.</li>
-							<li>Cocheras cubiertas.</li>
-							<li>Living y espacios comunes de diseño sofisticado.</li>
-							<li>Recepción hasta las 22 hs (atención telefónica 24 hs)</li>
-							<li>Check in desde las 14 hs hasta las 21:30 hs</li>
-							<li>Check out hasta las 10 hs.</li>
-							<li>Practicuna y bañera portatil sin cargo extra.</li>
-							<li>Desayuna buffet.</li>
-							<li>Piscina exterior climatizada (en temporada de verano).</li>
-							<li>Solarium y deck con reposeras.</li>
-							<li>Servicio de masajes en la habitación.</li>
-							<li>
-							Habitación con baño adaptado para personas con movilidad reducida.
-							<i class="fa fa-wheelchair" aria-hidden="true"></i>
-							</li>
+							<div>
+								<li>Aire acondicionado frio/calor.</li>
+								<li>Habitaciones de 35 m2.</li>
+								<li>Wi Fi de excelente conexión en todo el complejo.</li>
+								<li>Televisores LCD en habitaciones.</li>
+								<li>Frigobar.</li>
+								<li>Cofre de seguridad y alarma.</li>
+								<li>Cocheras cubiertas.</li>
+								<li>Living y espacios comunes de diseño.</li>
+								<li>Recepción hasta las 22 hs (atención telefónica 24 hs)</li>
+							</div>
+							<div>
+								<li>Check in desde las 14 hs hasta las 21:30 hs</li>
+								<li>Check out hasta las 10 hs.</li>
+								<li>Desayuno buffet.</li>
+								<li>Piscina exterior climatizada (en temporada de verano).</li>
+								<li>Solarium y deck.</li>
+								<li>Servicio de masajes.</li>
+								<li>
+								Habitación con baño adaptado para personas con movilidad reducida.
+								<i class="fa fa-wheelchair" aria-hidden="true"></i>
+								</li>
+							</div>
 						</ul>
 					</article>
 				</div>
@@ -145,10 +153,30 @@
 								<p>TV LCD</p>
 							</div>
 						</div>
+						<div class="moreimgs">
+							<div class="img">
+								<div class="lupa">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+								</div>
+								<img src="img/doble2.jpeg" alt="">
+							</div>
+							<div class="img">
+								<div class="lupa">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+								</div>
+								<img src="img/doble3.jpeg" alt="">
+							</div>
+							<div class="img">
+								<div class="lupa">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+								</div>
+								<img src="img/doble4.jpeg" alt="">
+							</div>
+						</div>
 					</div>
 					<div class="hab">
 						<div class="img">
-							<img src="img/triple.jpg">
+							<img src="img/triple.jpeg">
 						</div>
 						<div class="under">
 							<p class="room">ROOM</p>
@@ -180,6 +208,26 @@
 							<div class="tv">
 								<i class="fa fa-television" aria-hidden="true"></i>
 								<p>TV LCD</p>
+							</div>
+						</div>
+						<div class="moreimgs">
+							<div class="img">
+								<div class="lupa">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+								</div>
+								<img src="img/triple.jpeg" alt="">
+							</div>
+							<div class="img">
+								<div class="lupa">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+								</div>
+								<img src="img/triple2.jpeg" alt="">
+							</div>
+							<div class="img">
+								<div class="lupa">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+								</div>
+								<img src="img/triple3.jpeg" alt="">
 							</div>
 						</div>
 					</div>
@@ -218,6 +266,26 @@
 								<p>TV LCD</p>
 							</div>
 						</div>
+						<div class="moreimgs">
+							<div class="img">
+								<div class="lupa">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+								</div>
+								<img src="img/doble.jpg" alt="">
+							</div>
+							<div class="img">
+								<div class="lupa">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+								</div>
+								<img src="img/triple.jpeg" alt="">
+							</div>
+							<div class="img">
+								<div class="lupa">
+									<i class="fa fa-search-plus" aria-hidden="true"></i>
+								</div>
+								<img src="img/cuadruple.jpeg" alt="">
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -226,73 +294,9 @@
 					<h2>Sustentabilidad</h2>
 					<p>Harmonie hotel de montaña es una emprendimiento comprometido desde sus orígenes en el cuidado del medioambiente y del entorno donde desarrolla sus actividades.</p>
 					<p>En nuestro hotel proponemos al turista que haga un uso responsable de los recursos, concientizando sobre el impacto de cada actividad. Lo invitamos a sumarse a la separación de residuos y posterior compostaje de residuos orgánicos, poniendo nuestra huerta a su disposición.</p>
+					<a href="sustentabilidad">Leer Más</a>
 				</article>
-				<?php if(isset($_SESSION['hm_user']) && $_SESSION['hm_user'] == 'admin'): ?>
-					<a href="harmonieadmin/new.php">Añadir contenido</a>
-				<?php endif; ?>
-				<div class="sep">
-					<h3>Separación de residuos</h3>
-					<div class="articulos">
-						<?php foreach($resultados as $articulo): ?>
-							<div class="articulo">
-								<h4><?php echo $articulo['titulo'] ?></h4>
-								<p><?php echo $articulo['cont'] ?></p>
-								<p>Con el objetivo de reducir la cantidad de basura producida por el hotel se realiza un programa de divulgación sobre la generación de residuos a través de placas informativas, con el fin de conseguir cambios en las prácticas de adquisición y consumo.</p>
-								<div class="img">
-									<img src="img/<?php echo $articulo['img'] ?>">
-								</div>
-							</div>
-						<?php endforeach ?>
-					</div>
-				</div>
-				<?php if(!empty($compostaje)) :?>
-					<div class="comp">
-						<h3>Compostaje</h3>
-						<div class="articulos">
-							<?php foreach($compostaje as $articulo): ?>
-							<div class="articulo">
-								<h4><?php echo $articulo['titulo'] ?></h4>
-								<p><?php echo $articulo['cont'] ?></p>
-								<div class="img">
-									<img src="img/<?php echo $articulo['img'] ?>">
-								</div>
-							</div>
-						<?php endforeach; ?>
-						</div>
-					</div>
-				<?php endif; ?>
-			<?php if(!empty($huerta)): ?>
-				<div class="huerta">
-					<h3>Huerta</h3>
-					<div class="articulos">
-						<?php foreach($huerta as $articulo): ?>
-							<div class="articulo">
-								<h4><?php echo $articulo['titulo'] ?></h4>
-								<p><?php echo $articulo['cont'] ?></p>
-								<div class="img">
-									<img src="img/<?php echo $articulo['img'] ?>">
-								</div>
-							</div>
-						<?php endforeach; ?>
-					</div>
-				</div>
-			<?php endif; ?>
-			<?php if(!empty($eficiencia)): ?>
-				<div class="efi">
-					<h3>Eficiencia energética</h3>
-					<div class="articulos">
-						<?php foreach($huerta as $articulo): ?>
-							<div class="articulo">
-								<h4><?php echo $articulo['titulo'] ?></h4>
-								<p><?php echo $articulo['cont'] ?></p>
-								<div class="img">
-									<img src="img/<?php echo $articulo['img'] ?>">
-								</div>
-							</div>
-						<?php endforeach; ?>
-					</div>
-				</div>
-			<?php endif; ?>
+				
 			</div>
 			<?php require 'contacto.php' ?>
 
@@ -381,7 +385,7 @@
 		</div>
 	</div>
 	<script type="text/javascript" src='js/jquery-3.1.1.min.js'></script>
-	<script type="text/javascript" src='js/application.js'></script>
+	<script type="text/javascript" src='js/app.js'></script>
 </body>
 </html>
 

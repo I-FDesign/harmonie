@@ -26,7 +26,7 @@
 					':clase' => $_POST['clase']
 				));
 
-				$directorio = '../img/' . $thumb['name'];
+				$directorio = '../sustentabilidad/img/' . $thumb['name'];
 				move_uploaded_file($thumb['tmp_name'], $directorio);
 				$enviado = true;
 			}
