@@ -1,47 +1,32 @@
 <?php session_start();
 
 	require '../admin/functions.php'; 
- 	require 'sust.php';
+ 	require 'if.php';
  ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Sustentabilidad - Harmonie</title>
+	<title>Info útil - Harmonie</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<script src="https://use.fontawesome.com/2d83eb3d68.js"></script>
 	<link rel="stylesheet" type="text/css" href="../styles/styles.css">
 </head>
-<body>
 	<?php require '../back.php' ?>
 	<section class="main" style='padding-top:40px; background:none'>
 		<div class="sustentabilidad" style='border-bottom: none;'>
-			<h2 style='width:90%; margin:0 auto; padding-bottom:9px;border-bottom: 2px solid rgb(245, 131, 10)'>Sustentabilidad</h2>
+			<h2 style='width:90%; margin:0 auto; padding-bottom:9px;border-bottom: 2px solid rgb(245, 131, 10)'>Info útil</h2>
 			<?php if(isset($_SESSION['hm_user']) && $_SESSION['hm_user'] == 'admin'): ?>
-					<a href="../harmonieadmin/newsust.php">Añadir contenido</a>
+					<a href="../harmonieadmin/newif.php">Añadir contenido</a>
 			<?php endif; ?>
-				<div class="sep">
-					<h3>Separación de residuos</h3>
-					<div class="articulos">
-						<?php foreach($resultados as $articulo): ?>
-							<div class="articulo">
-								<h4><?php echo $articulo['titulo'] ?></h4>
-								<p><?php echo $articulo['cont'] ?></p>
-								<p>Con el objetivo de reducir la cantidad de basura producida por el hotel se realiza un programa de divulgación sobre la generación de residuos a través de placas informativas, con el fin de conseguir cambios en las prácticas de adquisición y consumo.</p>
-								<div class="img">
-									<img src="img/<?php echo $articulo['img'] ?>">
-								</div>
-							</div>
-						<?php endforeach ?>
-					</div>
-				</div>
-			<?php if(!empty($compostaje)) :?>
+	
+			<?php if(!empty($llegar)) :?>
 				<div class="comp">
-					<h3>Compostaje</h3>
+					<h3>Cómo llegar</h3>
 					<div class="articulos">
-						<?php foreach($compostaje as $articulo): ?>
+						<?php foreach($llegar as $articulo): ?>
 						<div class="articulo">
 							<h4><?php echo $articulo['titulo'] ?></h4>
 							<p><?php echo $articulo['cont'] ?></p>
@@ -53,11 +38,11 @@
 					</div>
 				</div>
 			<?php endif; ?>
-			<?php if(!empty($huerta)): ?>
+			<?php if(!empty($paseos)): ?>
 				<div class="huerta">
-					<h3>Huerta</h3>
+					<h3>Paseos</h3>
 					<div class="articulos">
-						<?php foreach($huerta as $articulo): ?>
+						<?php foreach($paseos as $articulo): ?>
 							<div class="articulo">
 								<h4><?php echo $articulo['titulo'] ?></h4>
 								<p><?php echo $articulo['cont'] ?></p>
@@ -69,11 +54,11 @@
 					</div>
 				</div>
 			<?php endif; ?>
-			<?php if(!empty($eficiencia)): ?>
+			<?php if(!empty($fest)): ?>
 				<div class="efi">
-					<h3>Eficiencia energética</h3>
+					<h3>Fiestas y Eventos</h3>
 					<div class="articulos">
-						<?php foreach($eficiencia as $articulo): ?>
+						<?php foreach($fest as $articulo): ?>
 							<div class="articulo">
 								<h4><?php echo $articulo['titulo'] ?></h4>
 								<p><?php echo $articulo['cont'] ?></p>

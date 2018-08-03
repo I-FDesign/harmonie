@@ -81,6 +81,7 @@ header .menu a:hover{
 	font-size: 32px;
 	font-weight: 400;
 	text-align: center;
+	font-family: 'Raleway', 'Open Sans', sans-serif;
 }
 .main  p span{
 	font-size: 24px;
@@ -243,7 +244,7 @@ header .menu a:hover{
 	margin-top: -30px;
 }
 .hab .under p{
-	color:rgb(253, 48, 78);
+	color:rgb(245, 131, 10);
 	font-family: 'Open Sans';
 	background: white;
 	padding:10px;
@@ -258,7 +259,7 @@ header .menu a:hover{
 .hab .under .arrow i{
 	font-size: 50px;
 	color:white;
-	background: rgb(253, 48, 78);
+	background: rgb(245, 131, 10);
 	font-weight: lighter;
 	padding:5px 25px;
 }
@@ -395,7 +396,11 @@ header .menu a:hover{
 	padding-bottom: 40px;
 	padding-top: 40px;
 }
-.main .contacto .form{
+.main .ifutil{
+	margin-top: 40px;
+}
+.main .contacto .form,
+.contacto .redes{
 	margin:0 auto;
 	margin-top: 40px;
 	width: 70%;
@@ -448,19 +453,19 @@ header .menu a:hover{
 	margin-top: 20px;
 	padding:13px;
 	border:none;
-	background: orange;
+	background: rgb(245, 131, 10);
 	color:white;
 	font-size: 18px;
 	font-weight: 300;
 	cursor:pointer;
 	border-radius: 4px;
-	border: 2px solid orange;
+	border: 2px solid rgb(245, 131, 10);
 	transition: .2s all ease;
 	text-align: center;
 }
 .contacto form input[type='submit']:hover{
 	padding:13px;
-	border: 2px solid orange;
+	border: 2px solid rgb(245, 131, 10);
 	background: white;
 	color:orange;
 }
@@ -479,9 +484,27 @@ header .menu a:hover{
 	text-align: center;
 	color:#36B62C;
 }
-
+.contacto .redes{
+	display:flex;
+	justify-content: space-around;
+	padding:0 40px;
+	align-items: center;
+}
+.contacto .redes i{
+	color:white;
+	font-size: 35px;
+	padding:5px 10px;
+	background: rgb(245, 131, 10);
+	border-radius: 3px;
+	cursor:pointer;
+	border:2px solid rgb(245, 131, 10);
+}
+.contacto .redes i:hover{
+	background: white;
+	color:rgb(245, 131, 10);
+}
 .main .location{
-	margin-top: 40px;
+	margin-top: 20px;
 }
 .main .location h2{
 	margin-bottom: 20px;
@@ -628,6 +651,7 @@ footer .footer-if .des-by p span{
 		padding:2px 4px;
 		font-size: 16px;
 		top:-6px;
+		text-align: center;
 	}
 	.hab .img img{
 		height: 250px;

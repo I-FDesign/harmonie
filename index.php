@@ -22,7 +22,7 @@
 					<img src="img/logo.jpg">
 				</div>
 				<nav>
-					<a href="#" >HOTEL</a>
+					<a href="#" class='hotel-btn'>HOTEL</a>
 					<a href="#" class='habitaciones_btn'>HABITACIONES</a>
 					<a href="#" class='sust-btn'>SUSTENTABILIDAD</a>
 					<a href="#" class='if-btn'>INFO ÚTIL</a>
@@ -43,7 +43,7 @@
 		</div>
 		<div class="nav" id='nav'>
 			<nav>
-				<a href="#" >HOTEL</a>
+				<a href="#"  class='hotel-btn'>HOTEL</a>
 				<a href="#" class='habitaciones_btn'>HABITACIONES</a>
 				<a href="#" class='sust-btn'>SUSTENTABILIDAD</a>
 				<a href="#" class='if-btn'>INFO ÚTIL</a>
@@ -116,6 +116,7 @@
 					de las actividades diarias de la ciudad brindándoles un contacto íntimo con la naturaleza.
 					</p>
 				</article>
+
 				<div class="hab-options">
 					<div class="hab">
 						<div class="img">
@@ -129,7 +130,7 @@
 							</div>
 						</div>
 						<div class="title">
-							<h2>Habitacion Doble</h2>
+							<h2>Habitación Doble</h2>
 						</div>
 						<div class="hab-info">
 							<div class="mts">
@@ -146,11 +147,19 @@
 							</div>
 							<div class="view">
 								<i class="fa fa-eye" aria-hidden="true"></i>
-								<p>Vista al jardín</p>
+								<p>Balcon con vista al jardín</p>
 							</div>
 							<div class="tv">
 								<i class="fa fa-television" aria-hidden="true"></i>
 								<p>TV LCD</p>
+							</div>
+							<div class="frigobar">
+								<i class="fa fa-snowflake-o" aria-hidden="true"></i>
+								<p>Frigobar</p>
+							</div>
+							<div class="split">
+								<i class="fa fa-thermometer-half" aria-hidden="true"></i>
+								<p>Split Frio/Calor</p>
 							</div>
 						</div>
 						<div class="moreimgs">
@@ -186,7 +195,7 @@
 							</div>
 						</div>
 						<div class="title">
-							<h2>Habitacion Triple</h2>
+							<h2>Habitación Triple</h2>
 						</div>
 						<div class="hab-info">
 							<div class="mts">
@@ -203,11 +212,19 @@
 							</div>
 							<div class="view">
 								<i class="fa fa-eye" aria-hidden="true"></i>
-								<p>Vista al jardín</p>
+								<p>Balcon con vista al jardín</p>
 							</div>
 							<div class="tv">
 								<i class="fa fa-television" aria-hidden="true"></i>
 								<p>TV LCD</p>
+							</div>
+							<div class="frigobar">
+								<i class="fa fa-snowflake-o" aria-hidden="true"></i>
+								<p>Frigobar</p>
+							</div>
+							<div class="split">
+								<i class="fa fa-thermometer-half" aria-hidden="true"></i>
+								<p>Split Frio/Calor</p>
 							</div>
 						</div>
 						<div class="moreimgs">
@@ -221,7 +238,7 @@
 								<div class="lupa">
 									<i class="fa fa-search-plus" aria-hidden="true"></i>
 								</div>
-								<img src="img/triple2.jpeg" alt="">
+								<img src="img/triple2.jpg" alt="">
 							</div>
 							<div class="img">
 								<div class="lupa">
@@ -242,7 +259,7 @@
 							</div>
 						</div>
 						<div class="title">
-							<h2>Apartamento Cuadrúple</h2>
+							<h2>Apartamento Cuádruple</h2>
 						</div>
 						<div class="hab-info">
 							<div class="mts">
@@ -251,7 +268,7 @@
 							</div>
 							<div class="bed">
 								<i class="fa fa-bed" aria-hidden="true"></i>
-								<p>1 Cama queen & 2 Cama Individual</p>
+								<p>1 Cama queen & 2 Camas Individuales</p>
 							</div>
 							<div class="bathroom">
 								<i class="fa fa-bath" aria-hidden="true"></i>
@@ -259,11 +276,23 @@
 							</div>
 							<div class="view">
 								<i class="fa fa-eye" aria-hidden="true"></i>
-								<p>Vista al jardín</p>
+								<p>Balcon con vista al jardín</p>
 							</div>
 							<div class="tv">
 								<i class="fa fa-television" aria-hidden="true"></i>
 								<p>TV LCD</p>
+							</div>
+							<div class="heladera">
+								<i class="fa fa-snowflake-o" aria-hidden="true"></i>
+								<p>Heladera</p>
+							</div>
+							<div class="split">
+								<i class="fa fa-thermometer-half" aria-hidden="true"></i>
+								<p>2 Split Frio/Calor</p>
+							</div>
+							<div class="kitchen">
+								<i class="fa fa-fire" aria-hidden="true"></i>
+								<p>Kitchenette</p>
 							</div>
 						</div>
 						<div class="moreimgs">
@@ -271,19 +300,19 @@
 								<div class="lupa">
 									<i class="fa fa-search-plus" aria-hidden="true"></i>
 								</div>
-								<img src="img/doble.jpg" alt="">
+								<img src="img/cuadruple2.jpeg" alt="">
 							</div>
 							<div class="img">
 								<div class="lupa">
 									<i class="fa fa-search-plus" aria-hidden="true"></i>
 								</div>
-								<img src="img/triple.jpeg" alt="">
+								<img src="img/cuadruple3.jpeg" alt="">
 							</div>
 							<div class="img">
 								<div class="lupa">
 									<i class="fa fa-search-plus" aria-hidden="true"></i>
 								</div>
-								<img src="img/cuadruple.jpeg" alt="">
+								<img src="img/cuadruple4.jpeg" alt="">
 							</div>
 						</div>
 					</div>
@@ -296,7 +325,11 @@
 					<p>En nuestro hotel proponemos al turista que haga un uso responsable de los recursos, concientizando sobre el impacto de cada actividad. Lo invitamos a sumarse a la separación de residuos y posterior compostaje de residuos orgánicos, poniendo nuestra huerta a su disposición.</p>
 					<a href="sustentabilidad">Leer Más</a>
 				</article>
-				
+				<article class='ifutil'>
+					<h2>Info útil</h2>
+					<p>Encontrá aqui toda la información sobre qué hacer en Villa General Belgrano, paseos, excursiones, lugares para visitar, eventos y fiestas.</p>
+					<a href="infoutil">Leer Más</a>
+				</article>
 			</div>
 			<?php require 'contacto.php' ?>
 
@@ -332,6 +365,10 @@
 					</form>
 					<p class='if'>Manuel Paguaga 85 – 5194 Villa General Belgrano – Sierras Córdoba</p>
 					<p class='if'>info@hotelharmonie.com.ar – www.hotelharmonie.com.ar</p>
+				</div>
+				<div class="redes">
+					<a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 				</div>
 			</div>
 			<div class="location">
@@ -376,16 +413,9 @@
 			</div>
 		</div>
 	</footer>
-	<div class="fixed">
-		<div class="call">
-			<a href="tel:03546463805"><i class="fa fa-phone" aria-hidden="true"></i></a>
-		</div>
-		<div class="calendar">
-			<a href="http://www.alojasoft.com/reservas/disponibilidadcristal.php?quehotel=1010"><i class="fa fa-calendar" aria-hidden="true"></i></a>
-		</div>
-	</div>
+	<?php require 'bottom.php' ?>
 	<script type="text/javascript" src='js/jquery-3.1.1.min.js'></script>
-	<script type="text/javascript" src='js/app.js'></script>
+	<script type="text/javascript" src='js/application.js'></script>
 </body>
 </html>
 

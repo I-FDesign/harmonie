@@ -71,7 +71,19 @@ function menu_fix_mob(){
 		$('.show-img').css('display', 'none');
 	});
 
+//Scroll Hotel
 
+var hotel = $('.info').offset().top;
+
+	$('.hotel-btn').on('click', function(e){
+		e.preventDefault();
+		$('html, body').animate({
+			scrollTop: hotel - 200
+		}, 600);
+
+		nav.style.display = 'none';
+		active_m = false;
+});
 
 
 //Scroll Habitaciones
@@ -105,12 +117,12 @@ var sustentabilidad = $('.sustentabilidad').offset().top;
 
 //Scroll Info Util
 
-var ubicacion = $('.location').offset().top;
+var ifutil = $('.ifutil').offset().top;
 
-	$('.ub_btn').on('click', function(e){
+	$('.if-btn').on('click', function(e){
 		e.preventDefault();
 		$('html, body').animate({
-			scrollTop: ubicacion
+			scrollTop: ifutil - 200
 		}, 600);
 
 		nav.style.display = 'none';
