@@ -21,6 +21,7 @@
 			<h2 style='width:90%; margin:0 auto; padding-bottom:9px;border-bottom: 2px solid rgb(245, 131, 10)'>Sustentabilidad</h2>
 			<?php if(isset($_SESSION['hm_user']) && $_SESSION['hm_user'] == 'admin'): ?>
 					<a href="../harmonieadmin/newsust.php">Añadir contenido</a>
+					<a href="../harmonieadmin/articulos">Articulos</a>
 			<?php endif; ?>
 				<div class="sep">
 					<h3>Separación de residuos</h3>
@@ -29,7 +30,6 @@
 							<div class="articulo">
 								<h4><?php echo $articulo['titulo'] ?></h4>
 								<p><?php echo $articulo['cont'] ?></p>
-								<p>Con el objetivo de reducir la cantidad de basura producida por el hotel se realiza un programa de divulgación sobre la generación de residuos a través de placas informativas, con el fin de conseguir cambios en las prácticas de adquisición y consumo.</p>
 								<div class="img">
 									<img src="img/<?php echo $articulo['img'] ?>">
 								</div>

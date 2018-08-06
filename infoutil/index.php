@@ -20,6 +20,7 @@
 			<h2 style='width:90%; margin:0 auto; padding-bottom:9px;border-bottom: 2px solid rgb(245, 131, 10)'>Info útil</h2>
 			<?php if(isset($_SESSION['hm_user']) && $_SESSION['hm_user'] == 'admin'): ?>
 					<a href="../harmonieadmin/newif.php">Añadir contenido</a>
+					<a href="../harmonieadmin/articulos">Articulos</a>
 			<?php endif; ?>
 	
 			<?php if(!empty($llegar)) :?>

@@ -1,0 +1,64 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: 'Raleway';
+}
+h2{
+	font-weight: normal;
+	font-size: 32px;
+	margin-top: 40px;
+	text-align: center;
+}
+.articulos{
+	max-width: 1000px;
+	width: 90%;
+	margin:0 auto;
+	margin-top: 30px;
+}
+.articulo{
+	box-shadow: 1px 1px 3px black;
+	width: 100%;
+	padding:20px;
+	margin-bottom: 20px;
+	opacity:.8;
+}
+.articulo h3{
+	text-align: center;
+	font-weight: normal;
+	font-size: 26px;
+}
+.articulo .content{
+	margin-top: 10px;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.articulo .content .img{
+	width: 30%;
+}
+.articulo .content .info{
+	width: 68%;
+}
+.articulo .content .img img{
+	width: 100%;
+	height: auto;
+}
+.articulo .btns{
+	margin-top: 20px;
+	display:flex;
+	justify-content: center
+}
+.articulo .btns a{
+	color:white;
+	text-decoration: none;
+	padding:15px 50px;
+	background: orange;
+	margin-left: 30px;
+	font-size: 20px;
+}
+.articulo:hover{
+	transition: .3s all ease;
+	opacity: 1;
+}

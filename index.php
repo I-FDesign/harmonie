@@ -276,7 +276,7 @@
 							</div>
 							<div class="view">
 								<i class="fa fa-eye" aria-hidden="true"></i>
-								<p>Balcon con vista al jardín</p>
+								<p>Vista al jardín</p>
 							</div>
 							<div class="tv">
 								<i class="fa fa-television" aria-hidden="true"></i>
@@ -400,7 +400,7 @@
 				</div>
 				<div class="tel">
 					<i class="fa fa-phone" aria-hidden="true"></i>
-					<p>(+54) 03546 - 463805 / 06</p>
+					<p>(+54) 03546 - 463805</p>
 				</div>
 				<div class="ft-mail">
 					<i class="fa fa-envelope" aria-hidden="true"></i>

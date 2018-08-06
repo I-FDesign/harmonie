@@ -47,13 +47,11 @@ header .menu .content{
 	align-items: center;
 }
 header .menu .logo{
-	height: 80px;
-	width: 20%;
 	margin-left: -20px;
 }
 header .menu .logo img{
 	width: 100%;
-	max-height: 100%;
+	height: auto;
 }
 header .menu a{
 	text-decoration: none;
@@ -716,7 +714,6 @@ footer .footer-if .des-by p span{
 		align-items: center;
 	}
 	header .menu-mobile .logo img{
-		height: 50px;
 		margin-left: -10px;
 	}
 	header .menu-mobile .menu-btn{
@@ -731,7 +728,7 @@ footer .footer-if .des-by p span{
 		cursor:pointer;
 	}
 	header .menu-mobile{
-		padding-bottom:10px;
+		padding-bottom:2px;
 		border-bottom:1px solid rgba(0,0,0,.3);
 	}
 	header .menu-mobile .menu-btn:hover{
