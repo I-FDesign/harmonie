@@ -244,7 +244,7 @@
 								<div class="lupa">
 									<i class="fa fa-search-plus" aria-hidden="true"></i>
 								</div>
-								<img src="img/triple3.jpeg" alt="">
+								<img src="img/triple3.JPG" alt="">
 							</div>
 						</div>
 					</div>
@@ -367,8 +367,8 @@
 					<p class='if'>info@hotelharmonie.com.ar – www.hotelharmonie.com.ar</p>
 				</div>
 				<div class="redes">
-					<a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					<a href="https://www.facebook.com/harmoniehoteldemontana/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+					<a href="https://www.instagram.com/hotelharmonie/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 				</div>
 			</div>
 			<div class="location">

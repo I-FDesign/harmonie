@@ -38,14 +38,17 @@
 		}
 
 		if(empty($errores)){
-			$enviar_a = 'santupa767@gmail.com';
-			$asunto = "$asunto \n";
-			$mensaje_preparado = "De: $nombre \n";
+		    $from = "no-reply@hotelharmonie.com.ar";
+		    $to = "santiagoiamarino@gmail.com";
+		    $subject = "$asunto \n";
+		    $mensaje_preparado = "De: $nombre \n";
 			$mensaje_preparado .= "Correo: $correo \n";
 			$mensaje_preparado .= "Mensaje: " . $mensaje;
+		    $headers = "From:" . $from;
 
-			mail($enviar_a, $asunto, $mensaje_preparado);
-			$enviado = true;
+		    mail($to,$subject,$mensaje_preparado, $headers);
+
+		    $enviado = true;
 		}
 	}
 

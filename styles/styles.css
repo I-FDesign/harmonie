@@ -375,6 +375,7 @@ header .menu a:hover{
 	border-radius: 3px;
 	box-shadow: 0 0 5px black;
 	padding:15px;
+	margin-bottom: 20px;
 }
 .articulo h4{
 	text-align: center;
